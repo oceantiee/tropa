@@ -1,5 +1,4 @@
 $(function () {
-
   //cлайдер в блоке рекомендаций
   const recommend = new Swiper(".recommend", {
     slidesPerView: 5,
@@ -89,6 +88,12 @@ $(function () {
   window.addEventListener("scroll", (function () {
     document.querySelector(".header").classList.toggle("header--fixed", window.scrollY != 0);
   }));
+
+  //анимация при скроле
+  AOS.init({
+    duration: 600,
+    disable: 'phone'
+  });
 
   //сортировка карточек по областям
   const mixer = mixitup(".areas");

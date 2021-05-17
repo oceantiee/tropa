@@ -34,6 +34,7 @@ function scripts() {
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'node_modules/swiper/swiper-bundle.js',
+    'node_modules/aos/dist/aos.js',
     'app/js/script.js'
   ])
   .pipe(concat('script.min.js'))
