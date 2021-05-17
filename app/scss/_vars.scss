@@ -1,0 +1,40 @@
+//colors
+$border: #E1E6E9;
+
+@mixin _1299 {
+  @media (max-width: 1299px) {
+    @content;
+  }
+}
+
+@mixin _1199 {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin _991 {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin _767 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin _575 {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
