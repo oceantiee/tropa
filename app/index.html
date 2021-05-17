@@ -262,7 +262,7 @@
                 даже назад первую курсивных.
               </p>
             </div>
-            <a class="about__support" href="#">Поддержать</a>
+            <a class="about__support" data-fancybox data-src="#popup" href="#">Поддержать</a>
           </div>
 
           <div class="about__aside">
@@ -281,8 +281,7 @@
         <div class="movie__inner">
           <h2 class="movie__title">Настало время путешествовать</h2>
           <span class="movie__subtitle">Зарядись мотивацией из нашего короткого ролика</span>
-          <a class="movie__link" href="#">
-            <img src="images/decor/play.svg" alt="">
+          <a class="movie__link" data-fancybox href="https://www.youtube.com/watch?v=ndizAUAR_Cs">
             <span class="movie__anim"></span>
             <span class="movie__anim movie__anim--2"></span>
             <span class="movie__anim movie__anim--3"></span>
@@ -385,6 +384,28 @@
         </div>
       </div>
     </section>
+
+    <div class="support" style="display: none;" id="popup">
+      <h2 class="support__title">Поддержка</h2>
+      <div class="support__text">
+        <p>
+          Если ты нажал на кнопку поддержки, значит тебе небезразлична судьба нашего проекта, который мы делаем
+          абсолютно на безвозмездной основе.
+        </p>
+        <p>
+          Именно поэтому каждый вклад ещё болье мотивирует и дальше собирать крутые маршруты для путешествий по
+          Беларуси, а также открывает перед нами дополнительные возможности, которые раньше ограничивались финансами.
+        </p>
+        <p>
+          Можешь быть уверен, что каждый переведённый рубль будет израсходован исключительно в целях развития проекта.
+        </p>
+        <span>Спасибо!</span>
+      </div>
+      <iframe class="support__frame"
+        src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0&targets-hint=&default-sum=500&button-text=11&payment-type-choice=on&mobile-payment-type-choice=on&hint=&successURL=&quickpay=shop&account=410015045964140"
+        frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+    </div>
+
   </main>
 
   <footer class="footer">
@@ -393,8 +414,8 @@
         <a class="footer__logo" href="#body">
           <img class="footer__img" src="images/logo-min.svg" alt="logo">
         </a>
-        <a class="footer__mail" href="mailto:test@mail.com">info@tropki.by</a>
-        <a class="footer__support" href="#">
+        <a class="footer__mail" href="mailto:info@tropki.by">info@tropki.by</a>
+        <a class="footer__support" data-fancybox data-src="#popup" href="#">
           Поддержать автора проекта
         </a>
       </div>
