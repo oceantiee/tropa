@@ -1,0 +1,65 @@
+.top {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000000d0;
+  }
+
+  &__inner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 92px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    @include line-clamp(2);
+    margin: auto 0 45px;
+
+    span {
+      display: block;
+      color: #ed6950
+    }
+
+    @include _991 {
+      font-size: 66px;
+      margin-bottom: 35px;
+    }
+
+    @include _767 {
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+
+    @include _575 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: $subtext;
+    @include line-clamp(1);
+    margin-bottom: auto;
+
+    @include _575 {
+      font-size: 16px;
+    }
+  }
+}

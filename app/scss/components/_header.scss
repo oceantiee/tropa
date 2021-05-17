@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 90;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px 30px 30px;
+
+  @include _1199 {
+    padding-right: 50px;
+  }
+
+  @include _991 {
+    padding: 20px 30px;
+  }
+
+  @include _767 {
+    padding: 20px;
+  }
+
+  &--fixed {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #13382af5;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 140px;
+    height: 60px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}

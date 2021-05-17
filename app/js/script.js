@@ -5,7 +5,7 @@ $(function () {
     slidesPerView: 5,
     spaceBetween: 5,
     slidesPerView: 'auto',
-    centeredSlides: !0,
+    centeredSlides: true,
     loop: 'true',
     autoplay: {
       delay: 3500,
@@ -39,7 +39,6 @@ $(function () {
     spaceBetween: 10,
     loop: false,
     slidesPerView: 'auto',
-    // slidesPerView: 4,
     breakpoints: {
       767: {
         spaceBetween: 15
@@ -84,11 +83,11 @@ $(function () {
     $('body,html').animate({
       scrollTop: top
     }, 850);
-  });  
+  });
 
   //прилипание хедера к верху экрана
   window.addEventListener("scroll", (function () {
-    document.querySelector(".header").classList.toggle("header--fixed", window.scrollY >= 70);
+    document.querySelector(".header").classList.toggle("header--fixed", window.scrollY != 0);
   }));
 
   //сортировка карточек по областям

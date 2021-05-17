@@ -1,0 +1,87 @@
+.areas {
+  padding: 60px 0;
+  background-image: url('../images/decor/topography.svg');
+  background-repeat: repeat;
+
+  @include _575 {
+    padding: 30px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;    
+    @include line-clamp(1);
+    margin-bottom: 30px;
+
+    @include _575 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    @include _991 {
+      margin-bottom: 15px;
+    }
+
+    @include _575 {
+      justify-content: start;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @include _575 {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 6px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid $border;
+    border-left: none;
+    border-right: none;
+    background-color: #ffffff8c;
+
+    &:hover {
+      color: $accent;
+      border-color: $accent;
+      transition: color 0.3s, border-color 0.3s;
+    }
+  }
+
+  .mixitup-control-active {
+    color: $accent;
+    border-color: $accent;
+    transition: color 0.3s, border-color 0.3s;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .place-card {
+      margin: 0 10px 30px;
+
+      @include _575 {
+        margin: 0 0 15px;
+      }
+    }
+  }
+}

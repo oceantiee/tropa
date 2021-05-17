@@ -1,0 +1,18 @@
+.recommend {
+  max-width: 1920px;
+  margin: -100px auto 0;
+
+  @media (max-height: 400px) {
+    margin-top: -60px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    @include line-clamp(1);
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,46 @@
+.popular-card {
+  max-width: 270px;
+  width: 100%;
+  height: 290px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  &__inner {
+    flex-grow: 1;
+    padding: 15px 10px;
+    background-color: #eaeaea5e;
+  }
+
+  &__name {
+    font-size: 16px;
+    margin-bottom: 8px;
+    @include line-clamp(1);
+  }
+
+  &__location {
+    display: block;
+    font-size: 14px;
+    @include line-clamp(2);
+  }
+}
