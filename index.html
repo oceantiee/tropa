@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Экотропы Беларуси</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+
+  <header class="header">
+    <a class="header__logo" href="#body">
+      <img class="header__img" src="images/logo.svg" alt="Логотип">
+    </a>
+
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#recommend">Экоропы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#popular">Локации</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#about">О нас</a>
+        </li>
+      </ul>
+
+      <button class="menu__btn" type="button">
+        <span></span>
+        <span class="sr-only">
+          Кнопка меню
+        </span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="top" style="background-image: url('images/content/top-bg.jpg');">
+      <div class="container">
+        <div class="top__inner">
+          <h1 class="top__title">
+            Экотропы
+            <span>Беларуси</span>
+          </h1>
+          <span class="top__subtitle">
+            Найди свое идеальное место
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="recommend" class="recommend swiper-container">
+      <h2 class="recommend__title">Рекомендуемые экотропы</h2>
+      <ul class="recommend__list swiper-wrapper">
+        <li class="img-card swiper-slide">
+          <a class="img-card__link" href="#" style="background-image: url('images/content/nadl.jpeg');">
+            <h3 class="img-card__title">Надливская гряда</h3>
+            <span class="img-card__location">Ивацевичский район, Брестская область</span>
+          </a>
+        </li>
+
+        <li class="img-card swiper-slide">
+          <a class="img-card__link" href="#" style="background-image: url('images/content/olman.jpg');">
+            <h3 class="img-card__title">Ольманские болота</h3>
+            <span class="img-card__location">Столинский район, Брестская область</span>
+          </a>
+        </li>
+
+        <li class="img-card swiper-slide">
+          <a class="img-card__link" href="#" style="background-image: url('images/content/les.jpg');">
+            <h3 class="img-card__title">По лесной заповедной тропе</h3>
+            <span class="img-card__location">Лепельский район, Витебская область</span>
+          </a>
+        </li>
+
+        <li class="img-card swiper-slide">
+          <a class="img-card__link" href="#" style="background-image: url('images/content/gol.jpg');">
+            <h3 class="img-card__title">Голубые озера</h3>
+            <span class="img-card__location">Мядельский район, Минская область</span>
+          </a>
+        </li>
+
+        <li class="img-card swiper-slide">
+          <a class="img-card__link" href="#" style="background-image: url('images/content/krin.jpg');">
+            <h3 class="img-card__title">Святые Криницы</h3>
+            <span class="img-card__location">Минский район, Минская область</span>
+          </a>
+        </li>
+
+        <li class="img-card swiper-slide">
+          <a class="img-card__link" href="#" style="background-image: url('images/content/s9b.jpg');">
+            <h3 class="img-card__title">Сябрыньский перекресток</h3>
+            <span class="img-card__location">Ивьевский район, Гродненская область</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <div class="info__inner">
+          <div class="info__aside">
+            <h2 class="info__title" data-aos="fade-right">Что такое экотропы?</h2>
+          </div>
+
+          <div class="info__content" data-aos="fade-left">
+            <p>
+              Экологическая тропа, или просто «экотропа», – это специально подготовленный прогулочный или туристический
+              маршрут на особенно интересных природных территориях.
+            </p>
+            <p>
+              Обычно такие маршруты создаются в уникальных природных местах, рукотворных историко-культурных или просто
+              примечательных природных объектах (парки, заповедники, заказники).
+            </p>
+            <p>
+              В Беларуси насчитывается целых 70 таких маршрутов, различной степени оборудованности и удалённости от
+              крупных городов.
+            </p>
+            <p>
+              Удобнее всего добираться до маршрутов на личном автомобиле, потому что на общественном транспорте дорога
+              будет либо неоправданно долгой, либо практически невозможной.
+            </p>
+            <p>
+              В общем, бери друзей и выдвигайся на поиски своего любимого уголка в Беларуси.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="areas">
+      <div class="container">
+        <h2 class="areas__title">Фильтр по областям</h2>
+
+        <ul class="areas__filter">
+          <li class="areas__item">
+            <button class="areas__btn" type="button" data-filter="all">Все</button>
+          </li>
+          <li class="areas__item">
+            <button class="areas__btn" type="button" data-filter=".mn">Минская</button>
+          </li>
+          <li class="areas__item">
+            <button class="areas__btn" type="button" data-filter=".br">Брестская</button>
+          </li>
+          <li class="areas__item">
+            <button class="areas__btn" type="button" data-filter=".vt">Витебская</button>
+          </li>
+          <li class="areas__item">
+            <button class="areas__btn" type="button" data-filter=".gm">Гомельская</button>
+          </li>
+          <li class="areas__item">
+            <button class="areas__btn" type="button" data-filter=".gr">Гродненская</button>
+          </li>
+          <li class="areas__item">
+            <button class="areas__btn" type="button" data-filter=".mg">Могилёвская</button>
+          </li>
+        </ul>
+
+        <ul class="areas__list">
+          <li class="place-card mix br">
+            <a class="place-card__link" href="#">
+              <img class="place-card__img" src="images/content/olman.jpg" alt="тропа Ольманские болота">
+              <div class="place-card__inner">
+                <h3 class="place-card__title">
+                  Ольманские болота
+                </h3>
+                <span class="place-card__location">Столинский район, Брестская область</span>
+                <span class="place-card__distance">1,5 км</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="place-card mix br">
+            <a class="place-card__link" href="#">
+              <img class="place-card__img" src="images/content/nadl.jpeg" alt="тропа «Надливская гряда»">
+              <div class="place-card__inner">
+                <h3 class="place-card__title">
+                  «Надливская гряда»
+                </h3>
+                <span class="place-card__location">Ивацевичский район, Брестская область</span>
+                <span class="place-card__distance">2 км</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="place-card mix gr">
+            <a class="place-card__link" href="#">
+              <img class="place-card__img" src="images/content/s9b.jpg" alt="тропа «Сябрыньский перекресток»">
+              <div class="place-card__inner">
+                <h3 class="place-card__title">
+                  «Сябрыньский перекресток»
+                </h3>
+                <span class="place-card__location">Ивьевский район, Гродненская область</span>
+                <span class="place-card__distance">1 км</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="place-card mix vt">
+            <a class="place-card__link" href="#">
+              <img class="place-card__img" src="images/content/les.jpg" alt="тропа «По лесной заповедной тропе»">
+              <div class="place-card__inner">
+                <h3 class="place-card__title">
+                  «По лесной заповедной тропе»
+                </h3>
+                <span class="place-card__location">Лепельский район, Витебская область</span>
+                <span class="place-card__distance">3 км</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="place-card mix mn">
+            <a class="place-card__link" href="#">
+              <img class="place-card__img" src="images/content/4izh.jpg" alt="тропа «Чижовка»">
+              <div class="place-card__inner">
+                <h3 class="place-card__title">
+                  «Чижовка»
+                </h3>
+                <span class="place-card__location">Минск</span>
+                <span class="place-card__distance">1 км</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="place-card mix vt">
+            <a class="place-card__link" href="#">
+              <img class="place-card__img" src="images/content/ozer.jpg" alt="тропа «Озеравки-Ельня»">
+              <div class="place-card__inner">
+                <h3 class="place-card__title">
+                  «Озеравки-Ельня»
+                </h3>
+                <span class="place-card__location">Миорский район, Витебская область</span>
+                <span class="place-card__distance">1,5 км</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content" data-aos="fade-right">
+            <span class="about__subtitle">немного о нас</span>
+            <h2 class="about__title">тропки.бай</h2>
+            <div class="about__text">
+              <p>
+                Тропки.бай - это команда путешественников-любителей, которым не сидится на одном месте, постоянно
+                хочется чего-то нового, необычного и интерессного.
+              </p>
+              <p>
+                Наша цель - собрать как можно больше захватывающих мест и маршрутов по Беларуси, а также поделиться ими
+                с каждым, кто в этом заинтересован, дать возможность побывать в местах, о которых многие даже
+                и не слышали!
+              </p>
+              <p>
+                Мы будем рады, если благодаря нашей информацации Вы откроете для себя новые места, получите незабываемые
+                эмоции, проведёте своё время с удовольствием.
+              </p>
+              <p>
+                Но всего этого может не быть, если ничего не делать. Поэтому скорее собирай компанию, выбирай
+                направление и вперёд, за новыми приключениями!
+              </p>
+            </div>
+            <a class="about__support" href="#popup">Поддержать</a>
+          </div>
+
+          <div class="about__aside" data-aos="fade-left">
+            <div class="about__images">
+              <div class="about__anim">
+                <img class="about__img" src="images/content/about.jpg" alt="Команда тропки.бай">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="movie" style="background-image: url('images/content/krin-bg.jpg');">
+      <div class="container">
+        <div class="movie__inner">
+          <h2 class="movie__title">Настало время путешествовать</h2>
+          <span class="movie__subtitle">Зарядись мотивацией из нашего короткого ролика</span>
+          <a class="movie__link" href="https://www.youtube.com/watch?v=ndizAUAR_Cs">
+            <span class="movie__anim"></span>
+            <span class="movie__anim movie__anim--2"></span>
+            <span class="movie__anim movie__anim--3"></span>
+            <span class=" sr-only">Ссылка на просмотр видео во всплывающем окне</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section id="popular" class="popular">
+      <div class="container">
+        <h2 class="popular__title">Другие популярные локации в Беларуси</h2>
+
+        <div class="popular__inner">
+          <div class="popular__slider swiper-container">
+            <ul class="popular__list swiper-wrapper">
+              <li class="popular-card swiper-slide">
+                <a class="popular-card__link" href="#">
+                  <img class="popular-card__img" src="images/content/zelen.jpeg" alt="Меловые карьеры в Гродно">
+                  <div class="popular-card__inner">
+                    <h3 class="popular-card__name">
+                      Меловые карьеры в Гродно
+                    </h3>
+                    <span class="popular-card__location">Гродно</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="popular-card swiper-slide">
+                <a class="popular-card__link" href="#">
+                  <img class="popular-card__img" src="images/content/terr.jpeg" alt="Солигорские терриконы">
+                  <div class="popular-card__inner">
+                    <h3 class="popular-card__name">
+                      Солигорские терриконы
+                    </h3>
+                    <span class="popular-card__location">Солигорский район, Минская область</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="popular-card swiper-slide">
+                <a class="popular-card__link" href="#">
+                  <img class="popular-card__img" src="images/content/gerv.jpg" alt="Троицкий костёл в Гервятах">
+                  <div class="popular-card__inner">
+                    <h3 class="popular-card__name">
+                      Троицкий костёл в Гервятах
+                    </h3>
+                    <span class="popular-card__location">Островецкий район, Гродненская область</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="popular-card swiper-slide">
+                <a class="popular-card__link" href="#">
+                  <img class="popular-card__img" src="images/content/most.jpg" alt="Подвесной мост в д.Ручица">
+                  <div class="popular-card__inner">
+                    <h3 class="popular-card__name">
+                      Подвесной мост в д.Ручица
+                    </h3>
+                    <span class="popular-card__location">Вилейский район, Минская область</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="popular-card swiper-slide">
+                <a class="popular-card__link" href="#">
+                  <img class="popular-card__img" src="images/content/terr.jpeg" alt="Солигорские терриконы">
+                  <div class="popular-card__inner">
+                    <h3 class="popular-card__name">
+                      Солигорские терриконы
+                    </h3>
+                    <span class="popular-card__location">Солигорский район, Минская область</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="popular-card swiper-slide">
+                <a class="popular-card__link" href="#">
+                  <img class="popular-card__img" src="images/content/most.jpg" alt="Подвесной мост в д.Ручица">
+                  <div class="popular-card__inner">
+                    <h3 class="popular-card__name">
+                      Подвесной мост в д.Ручица
+                    </h3>
+                    <span class="popular-card__location">Вилейский район, Минская область</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular__btn popular__btn--prev">
+            <span class="sr-only">Кнопка слайд назад</span>
+          </div>
+          <div class="popular__btn popular__btn--next">
+            <span class="sr-only">Кнопка слайд вперёд</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="support mfp-hide" id="popup">
+      <h2 class="support__title">Поддержка</h2>
+      <div class="support__text">
+        <p>
+          Если ты нажал на кнопку поддержки, значит тебе небезразлична судьба нашего проекта, который мы делаем
+          абсолютно на безвозмездной основе.
+        </p>
+        <p>
+          Именно поэтому каждый вклад ещё больше мотивирует и дальше собирать крутые маршруты для путешествий по
+          Беларуси, а также открывает перед нами дополнительные возможности, которые раньше ограничивались финансами.
+        </p>
+        <p>
+          Мы ни к чему не призываем и ничего не просим, но если у Вас есть желание поддержать проет, можно это сделать
+          пожертвовав любую сумму.
+        </p>
+        <p>
+          Можешь быть уверен, что каждый переведённый рубль будет израсходован исключительно в целях развития проекта.
+        </p>
+        <span>Спасибо!</span>
+      </div>
+      <iframe class="support__frame"
+        src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0&targets-hint=&default-sum=500&button-text=11&payment-type-choice=on&mobile-payment-type-choice=on&hint=&successURL=&quickpay=shop&account=410015045964140"
+        frameborder="0" scrolling="no"></iframe>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__logo" href="#body">
+          <img class="footer__img" src="images/logo-min.svg" alt="Логотип">
+        </a>
+        <a class="footer__mail" href="mailto:info@tropki.by">info@tropki.by</a>
+        <a class="footer__support" href="#popup">
+          Поддержать автора проекта
+        </a>
+      </div>
+      <span class="footer__copy">
+        Тропкi © 2021 All Right Reserved
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
