@@ -4,7 +4,7 @@
 
   &--active {
     .menu__btn {
-      div {
+      span {
         display: none;
       }
 
@@ -79,7 +79,7 @@
       z-index: 101;
     }
 
-    div {
+    span {
       position: absolute;
       left: 7px;
       right: 0;

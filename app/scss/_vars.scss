@@ -58,19 +58,10 @@ $border: #E1E6E9;
   }
 }
 
-//line clamp (text limit)
+//ограничение строк текста
 @mixin line-clamp($line) {
   display: -webkit-box;
   -webkit-line-clamp: $line;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-//fancybox fix
-@function max($numbers...) {
-  @return m#{a}x(#{$numbers});
-}
-
-@function min($numbers...) {
-  @return m#{i}n(#{$numbers});
 }

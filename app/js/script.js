@@ -54,7 +54,7 @@ $(function () {
       nextEl: '.popular__btn--next',
       prevEl: '.popular__btn--prev',
     },
-  });
+  });  
 
   //мобильное меню
   $('.menu__btn').on('click', (function () {
@@ -92,9 +92,27 @@ $(function () {
   //анимация при скроле
   AOS.init({
     duration: 600,
+    delay: 50,
     disable: 'phone'
   });
 
+  //всплывающие окна
+  $('.movie__link').magnificPopup({
+    type: 'iframe'
+  });
+  $('.about__support, .footer__support').magnificPopup({
+    type: 'inline'
+  });
+
+  //анимация карточки при наведении мыши
+  $('.place-card').hover(function () {
+    $(this).toggleClass('place-card--anim')
+  });
+
   //сортировка карточек по областям
-  const mixer = mixitup(".areas");
+  const mixer = mixitup('.areas', {
+    animation: {
+      // enable: true
+    },
+  });
 });

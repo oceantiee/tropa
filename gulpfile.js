@@ -22,7 +22,7 @@ function styles() {
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],
-      grid: true
+      grid: 'autoplace'
     }))
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
@@ -32,9 +32,9 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/mixitup/dist/mixitup.js',
-    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
-    'node_modules/swiper/swiper-bundle.js',
+    'node_modules/swiper/swiper-bundle.min.js',
     'node_modules/aos/dist/aos.js',
+    'app/js/magnific-popup.min.js',
     'app/js/script.js'
   ])
   .pipe(concat('script.min.js'))
@@ -63,7 +63,8 @@ function build() {
   return src([
     'app/**/*.html',
     'app/css/style.min.css',
-    'app/js/script.min.js'
+    'app/js/script.min.js',
+    'app/fonts/**/*'
   ], {base: 'app'})
   .pipe(dest('dist'))
 }

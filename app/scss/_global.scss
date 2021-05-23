@@ -53,3 +53,8 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.mfp-inline-holder .mfp-content {
+  max-width: 100%;
+  width: auto;
+}
