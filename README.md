@@ -18,8 +18,6 @@
 
 В ветке <a href="https://github.com/oceantiee/tropa/tree/dev">_'dev'_</a> можно посмотреть рабочую сборку c исходным кодом (gulp, scss)  
 
-<a href="http://tropa.matvejchik.ru/">Посмотреть веб-сайт можно тут</a>
-
 ---
 
 ###### Мои контакты:
