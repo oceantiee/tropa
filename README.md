@@ -16,9 +16,7 @@
 
 В ветке <a href="https://github.com/oceantiee/tropa">_'main'_</a>  содержится результат работы с миницифированным кодом
 
-В ветке <a href="https://github.com/oceantiee/tropa/tree/dev">_'dev'_</a> можно посмотреть рабочую сборку c исходным кодом (gulp, scss)  
-
-<a href="http://tropa.matvejchik.ru/">Посмотреть веб-сайт можно тут</a>
+В ветке <a href="https://github.com/oceantiee/tropa/tree/dev">_'dev'_</a> можно посмотреть рабочую сборку c исходным кодом (gulp, scss) 
 
 ---
 
